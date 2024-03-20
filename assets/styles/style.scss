@@ -1,1 +1,53 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+$border-color: #c3ccd9;
+$text-color: #3f3f46;
+$header-icon-color: #9ba8ba;
+$link-hover-border-color: #0063FB;
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    border-bottom: 1px solid $border-color;
+    font-weight: 600;
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        margin: 0 auto;
+
+        &--right {
+            display: flex;
+            margin-left: 200px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: $text-color;
+        font-size: .7rem;
+        margin: 0 .5rem;
+        border-bottom: 2px solid transparent;
+        padding: .5rem;
+        height: 2rem;
+
+        &--text {
+            margin-left: .5rem;
+        }
+
+        & svg {
+            color: $header-icon-color;
+        }
+
+        &:hover {
+            border-color: $link-hover-border-color;
+        }
+    }
+}
+
