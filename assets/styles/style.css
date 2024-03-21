@@ -28,7 +28,7 @@ body {
 }
 .header__nav--right {
   display: flex;
-  margin-left: 200px;
+  margin-left: 10vw;
 }
 .header__link {
   text-decoration: none;
@@ -124,6 +124,7 @@ body {
 }
 .suggestions__title {
   display: inline;
+  color: #3f3f46;
 }
 .suggestions__link {
   text-decoration: none;
@@ -133,4 +134,8 @@ body {
 }
 .suggestions__link:hover {
   text-decoration: underline;
+}
+.suggestions__cards {
+  margin-top: 25px;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

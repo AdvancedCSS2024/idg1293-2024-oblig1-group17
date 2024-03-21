@@ -5,6 +5,7 @@ $border-color: #c3ccd9;
 $input-focus-border-color: #06B6F2;
 $text-color: #3f3f46;
 $dark-border-color: #9ba8ba;
+$gray-color: #767676;
 
 .search__input {
     padding: .8rem;
@@ -14,7 +15,7 @@ $dark-border-color: #9ba8ba;
     box-sizing: border-box;
     margin: 10px;
     height: 3rem;
-    width: 75%;
+    width: 70%;
     padding-right: 50px;
     font-family: 'FINNType-Light', sans-serif;
 
@@ -43,5 +44,75 @@ $dark-border-color: #9ba8ba;
         transform: translateX(-60px);
         color: $text-color;
         margin-right: -40px;
+    }
+}
+
+.card {
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: #E0F0FF7F;
+        cursor: pointer;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__image {
+        border-radius: 10px;
+        border: 2px solid $border-color;
+    }
+
+    &__like {
+        position: absolute;
+        padding: 0;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        z-index: 1;
+        background: transparent;
+        border: none;
+        border-radius: 100px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #B3DAFF7F;
+        }
+    }
+
+    &__price {
+        width: 292px;
+        height: 292px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        padding: 0px 0px 10px 10px;
+        font-family: "Finntype-Medium", sans-serif;
+        color: #ffffff;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.7456232492997199) 0%, rgba(255,255,255,0) 17%, rgba(255,255,255,0) 100%);
+        border-radius: 10px;
+        font-size: 1.1rem;
+    }
+
+    &__location {
+        color: $gray-color;
+        font-size: .8rem;
+        margin: .5rem 0;
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        margin: .5rem 0;
+        color: $text-color;
     }
 }

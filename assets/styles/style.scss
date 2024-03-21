@@ -37,7 +37,7 @@ body {
 
         &--right {
             display: flex;
-            margin-left: 200px;
+            margin-left: 10vw;
         }
     }
 
@@ -148,6 +148,7 @@ body {
 
     &__title {
         display: inline;
+        color: $text-color;
     }
     &__link {
         text-decoration: none;
@@ -158,5 +159,10 @@ body {
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &__cards {
+        margin-top: 25px;
+        display: flex;
     }
 }
