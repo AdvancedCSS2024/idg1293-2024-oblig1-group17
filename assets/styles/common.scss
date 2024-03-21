@@ -2,48 +2,52 @@
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
 $border-color: #c3ccd9;
-$input-focus-border-color: #06B6F2;
-$text-color: #3f3f46;
+$secondary-blue: #06befb;
+$licorice: #464646;
 $dark-border-color: #9ba8ba;
 $gray-color: #767676;
+.search {
+    display: flex;
+    align-items: center;
+    width: 50vw;
 
-.search__input {
-    padding: .8rem;
-    font-size: 1rem;
-    border: 1px solid $border-color;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin: 10px;
-    height: 3rem;
-    width: 70%;
-    padding-right: 50px;
-    font-family: 'FINNType-Light', sans-serif;
-
-    &:hover {
-        border-color: $dark-border-color;
-    }
-
-    &:focus {
-        outline: none;
-        border-color: $input-focus-border-color;
-        border-color: transparent;
-        outline: 2px solid $input-focus-border-color;
-    }
-
-    &::placeholder {
-        color: $border-color
-    }
-
-    &--submit {
-        height: 3rem;
+    &__input {
         padding: .8rem;
-        padding-top: .7rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        transform: translateX(-60px);
-        color: $text-color;
-        margin-right: -40px;
+        font-size: 1rem;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 10px;
+        height: 3rem;
+        width: 100%;
+        padding-right: 50px;
+        font-family: 'FINNType-Light', sans-serif;
+
+        &:hover {
+            border-color: $dark-border-color;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: transparent;
+            outline: 2px solid $secondary-blue;
+        }
+
+        &::placeholder {
+            color: $border-color
+        }
+
+        &--submit {
+            height: 3rem;
+            padding: .8rem;
+            padding-top: .7rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transform: translateX(-60px);
+            color: $licorice;
+            margin-right: -40px;
+        }
     }
 }
 
@@ -85,7 +89,7 @@ $gray-color: #767676;
 
         &:hover {
             cursor: pointer;
-            background-color: #B3DAFF7F;
+            background-color: #7cafde7f;
         }
     }
 
@@ -113,6 +117,6 @@ $gray-color: #767676;
     &__title {
         font-size: 1.1rem;
         margin: .5rem 0;
-        color: $text-color;
+        color: $licorice;
     }
 }
