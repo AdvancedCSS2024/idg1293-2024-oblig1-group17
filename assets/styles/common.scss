@@ -1,3 +1,47 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+$border-color: #c3ccd9;
+$input-focus-border-color: #06B6F2;
+$text-color: #3f3f46;
+$dark-border-color: #9ba8ba;
+
+.search__input {
+    padding: .8rem;
+    font-size: 1rem;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 3rem;
+    width: 75%;
+    padding-right: 50px;
+    font-family: 'FINNType-Light', sans-serif;
+
+    &:hover {
+        border-color: $dark-border-color;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $input-focus-border-color;
+        border-color: transparent;
+        outline: 2px solid $input-focus-border-color;
+    }
+
+    &::placeholder {
+        color: $border-color
+    }
+
+    &--submit {
+        height: 3rem;
+        padding: .8rem;
+        padding-top: .7rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transform: translateX(-60px);
+        color: $text-color;
+        margin-right: -40px;
+    }
+}

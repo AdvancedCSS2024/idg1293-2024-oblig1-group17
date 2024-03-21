@@ -1,1 +1,38 @@
-/*# sourceMappingURL=common.css.map */
+.search__input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #c3ccd9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+  height: 3rem;
+  width: 75%;
+  padding-right: 50px;
+  font-family: "FINNType-Light", sans-serif;
+}
+.search__input:hover {
+  border-color: #9ba8ba;
+}
+.search__input:focus {
+  outline: none;
+  border-color: #06B6F2;
+  border-color: transparent;
+  outline: 2px solid #06B6F2;
+}
+.search__input::-moz-placeholder {
+  color: #c3ccd9;
+}
+.search__input::placeholder {
+  color: #c3ccd9;
+}
+.search__input--submit {
+  height: 3rem;
+  padding: 0.8rem;
+  padding-top: 0.7rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transform: translateX(-60px);
+  color: #3f3f46;
+  margin-right: -40px;
+}/*# sourceMappingURL=common.css.map */

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screenshot 1 page</title>
+  <link rel="preload" href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="stylesheet" href="assets/styles/common.css">
 </head>
@@ -47,13 +49,13 @@
   <main>
     <div class="find">
       <div class="find__searcharea">
-        <input type="text" name="searchbar" id="searchbar" class="search__input">
+        <input type="text" name="searchbar" id="searchbar" class="search__input" placeholder="Søk etter ski eller smoking">
         <button type="submit" class="search__input--submit">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" part="w-icon-search-24-part"><title>Forstørrelsesglass</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.358 18.153a9.063 9.063 0 1 0-7.09-16.682 9.063 9.063 0 0 0 7.09 16.682m2.862-1.933 7.03 7.03"></path></svg>
         </button>
         <a href="/kart" class="find__link--map">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#818B9A" fill-rule="evenodd" d="M21.551 4.647L15.986 2.42v6.114a.75.75 0 11-1.5 0V2.421L8.764 4.71v13.912l2.582-1.033a.75.75 0 01.557 1.393l-3.24 1.296a1.75 1.75 0 01-1.3 0l-6.221-2.49a1.75 1.75 0 01-1.1-1.624V2.79a1.75 1.75 0 012.4-1.625L7.92 3.357a.25.25 0 00.186 0L14.586.765a1.75 1.75 0 011.3 0l6.222 2.49c.665.265 1.1.908 1.1 1.624v4.379a.75.75 0 01-1.5 0V4.879a.25.25 0 00-.157-.232zM7.264 4.71l-5.38-2.152a.25.25 0 00-.342.232v13.374a.25.25 0 00.157.232l5.565 2.226V4.71zm10.86 7.103a3.583 3.583 0 00-3.582 3.583c0 .42.191 1.042.568 1.807.365.743.863 1.537 1.378 2.272a26.001 26.001 0 001.637 2.098 25.974 25.974 0 001.637-2.099c.515-.734 1.012-1.528 1.378-2.27.377-.766.568-1.388.568-1.808a3.583 3.583 0 00-3.583-3.583zm-5.082 3.583a5.083 5.083 0 0110.166 0c0 .777-.322 1.656-.722 2.47-.412.836-.955 1.698-1.495 2.47-.542.773-1.09 1.47-1.522 1.977a12.44 12.44 0 01-.557.618 3.353 3.353 0 01-.217.206c-.033.027-.08.065-.134.1a.782.782 0 01-.872 0 1.273 1.273 0 01-.134-.1 3.327 3.327 0 01-.217-.206 12.44 12.44 0 01-.557-.618 27.474 27.474 0 01-1.522-1.978c-.54-.771-1.084-1.633-1.495-2.47-.4-.813-.723-1.692-.723-2.469zm6.527 0a1.444 1.444 0 11-2.889 0 1.444 1.444 0 012.89 0z" clip-rule="evenodd"></path></svg>
-          <span class="find__link--text">Kart</span>
+          Kart
         </a>
       </div>
       <div class="find__categories">
@@ -94,23 +96,32 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-phone-badge-check-42-part"><title>Smarttelefon med et sjekkmerke</title><g stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="m23.428 5-.348-.522a1.71 1.71 0 0 0-1.426-.764H11c-.947 0-1.714.768-1.714 1.715v18c0 .946.767 1.714 1.714 1.714h11.143c.947 0 1.714-.768 1.714-1.714v-2.572"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.143 21.714H23"></path><path stroke-linecap="round" d="M15.286 7.143h2.571"></path><path d="M28.737 5.932a1.45 1.45 0 0 1 2.24 0l.75.912c.308.373.78.569 1.261.522l1.176-.114a1.45 1.45 0 0 1 1.584 1.584l-.114 1.176c-.047.48.149.953.522 1.26l.912.75a1.45 1.45 0 0 1 0 2.24l-.912.751a1.45 1.45 0 0 0-.522 1.26l.114 1.176a1.45 1.45 0 0 1-1.584 1.584l-1.176-.114a1.45 1.45 0 0 0-1.26.522l-.75.912a1.45 1.45 0 0 1-2.24 0l-.751-.912a1.45 1.45 0 0 0-1.26-.522l-1.176.114a1.45 1.45 0 0 1-1.584-1.584l.114-1.175a1.45 1.45 0 0 0-.522-1.26l-.912-.751a1.45 1.45 0 0 1 0-2.24l.912-.75c.373-.308.569-.78.522-1.261l-.114-1.176a1.45 1.45 0 0 1 1.584-1.584l1.175.114a1.45 1.45 0 0 0 1.26-.522z"></path></g><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m27 13.192 1.732 1.582a.855.855 0 0 0 1.244-.091L33 11"></path></svg>
           <span class="find__link--text">Nybrukt mobil</span>
         </a>
-        <a href="/" class="find__link">
+        <a href="/" class="find__link external">
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-honk-light-42-part"><title>Honk lyst ikon</title><path fill="#570E2D" d="M27.34 2a5.66 5.66 0 1 0 0 11.32 5.66 5.66 0 0 0 0-11.32m0 8.572a2.912 2.912 0 1 1 0-5.823 2.912 2.912 0 0 1 0 5.823m-9.768 4.108v7.33l-5.049-7.33H9V26h2.749v-8.454L17.572 26h2.749V14.68zM29.799 26H33l-4.576-6.553 4.264-4.768H29.58l-5.152 5.991v-5.99H21.68V26h2.75v-2.084l2.197-2.458L29.798 26ZM17.572 2v4.436h-5.823V2H9v11.32h2.749V8.885h5.823v4.437h2.749V2z"></path></svg>
           <span class="find__link--text">Bilabonnement</span>
+          <div class="find__link--external">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" part="w-icon-link-external-16-part"><title>Firkant med pil som peker oppover mot høyre</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 1 8 8m3.04-7H15v3.96M7 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"></path></svg>
+          </div>
         </a>
-        <a href="/" class="find__link">
+        <a href="/" class="find__link external">
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-nettbil-light-42-part"><title>Nettbil</title><path fill="#044046" d="M9.698 24c3.148 0 5.699-2.537 5.699-5.667s-2.551-5.666-5.699-5.666C6.551 12.666 4 15.203 4 18.332 4 21.463 6.551 24 9.698 24m22.604 0c3.148 0 5.699-2.537 5.699-5.667s-2.551-5.666-5.699-5.666-5.698 2.537-5.698 5.666S29.155 24 32.302 24"></path><path fill="#FF8752" d="M32.302 18.24H9.698C9.698 12.031 14.758 7 21 7s11.302 5.032 11.302 11.24"></path></svg>
           <span class="find__link--text">Nettbil</span>
+          <div class="find__link--external">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" part="w-icon-link-external-16-part"><title>Firkant med pil som peker oppover mot høyre</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 1 8 8m3.04-7H15v3.96M7 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"></path></svg>
+          </div>
         </a>
-        <a href="/" class="find__link">
+        <a href="/" class="find__link external">
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28" part="w-icon-remppatori-light-42-part"><title>Remppatori lyst ikon</title><path fill="#101F41" d="M17.08 1.961 7.002 12.007l2.8 2.791 10.08-10.046-2.8-2.79Z"></path><path fill="#3960BF" d="M15.96 10.89a3.967 3.967 0 0 0 5.6 0l3.36-3.348 7.28 7.256 2.8-2.79L24.92 1.96z"></path><path fill="#101F41" d="M22.68 12.007a5.553 5.553 0 0 1-7.839 0l-3.92 3.907 10.08 10.047 1.68-1.675-3.92-3.907 1.12-1.116 3.92 3.907 1.68-1.675-3.92-3.906 1.12-1.117 3.92 3.907 1.68-1.674-3.92-3.907 1.12-1.116 3.92 3.907 1.68-1.675-6.16-6.14z"></path></svg>
           <span class="find__link--text">Mittanbud</span>
+          <div class="find__link--external">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" part="w-icon-link-external-16-part"><title>Firkant med pil som peker oppover mot høyre</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 1 8 8m3.04-7H15v3.96M7 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"></path></svg>
+          </div>
         </a>
       </div>
     </div>
     <div class="suggestions">
-      <h2>Anbefalinger til deg</h2>
-      <a href="/">Hvorfor anbefaler vi disse annonsene?</a>
+      <h2 class="suggestions__title">Anbefalinger til deg</h2>
+      <a href="/" class="suggestions__link">Hvorfor anbefaler vi disse annonsene?</a>
       <div class="suggestions__cards">
         <div class="card">
           <h3 class="card__title">Lys toroms leilighet med hage og uteplass</h3>
