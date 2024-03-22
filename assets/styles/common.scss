@@ -1,11 +1,15 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+
+// Color variables
 $border-color: #c3ccd9;
 $secondary-blue: #06befb;
 $licorice: #464646;
 $dark-border-color: #9ba8ba;
 $gray-color: #767676;
+
+// Search component
 .search {
     display: flex;
     align-items: center;
@@ -51,6 +55,7 @@ $gray-color: #767676;
     }
 }
 
+// Card component
 .card {
     width: 300px;
     padding: 12px;
@@ -102,7 +107,7 @@ $gray-color: #767676;
         padding: 0px 0px 10px 10px;
         font-family: "Finntype-Medium", sans-serif;
         color: #ffffff;
-        background: rgb(0,0,0);
+        background: #000000;
         background: linear-gradient(0deg, rgba(0,0,0,0.7456232492997199) 0%, rgba(255,255,255,0) 17%, rgba(255,255,255,0) 100%);
         border-radius: 10px;
         font-size: 1.1rem;

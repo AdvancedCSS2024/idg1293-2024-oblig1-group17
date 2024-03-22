@@ -1,4 +1,6 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+// Color variables (the ones without official name I named myself)
 $border-color: #c3ccd9;
 $licorice: #464646;
 $header-icon-color: #9ba8ba;
@@ -6,6 +8,7 @@ $primary-blue: #0063fb;
 $secondary-blue: #06befb;
 $find-hover-link-color: #6F7D90;
 
+// Importing the font specified in the Fabric design system
 @font-face {
     font-family: 'FINNType-Light';
     src: url('https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2') format('woff2');
