@@ -169,3 +169,17 @@ body {
         display: flex;
     }
 }
+
+.demo {
+    &__cardhover {
+        background-color: #E0F0FF7F;
+    }
+    &__searchhover {
+        border-color: $header-icon-color;
+    }
+    &__searchfocus {
+        outline: none;
+        border-color: transparent;
+        outline: 2px solid $secondary-blue;
+    }
+}
