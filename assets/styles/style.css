@@ -138,4 +138,16 @@ body {
 .suggestions__cards {
   margin-top: 25px;
   display: flex;
+}
+
+.demo__cardhover {
+  background-color: rgba(224, 240, 255, 0.4980392157);
+}
+.demo__searchhover {
+  border-color: #9ba8ba;
+}
+.demo__searchfocus {
+  outline: none;
+  border-color: transparent;
+  outline: 2px solid #06befb;
 }/*# sourceMappingURL=style.css.map */
