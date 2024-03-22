@@ -1,1 +1,171 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+
+// Color variables (the ones without official name I named myself)
+$border-color: #c3ccd9;
+$licorice: #464646;
+$header-icon-color: #9ba8ba;
+$primary-blue: #0063fb;
+$secondary-blue: #06befb;
+$find-hover-link-color: #6F7D90;
+
+// Importing the font specified in the Fabric design system
+@font-face {
+    font-family: 'FINNType-Light';
+    src: url('https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'FINNType-Medium';
+    src: url('https://assets.finn.no/pkg/@warp-ds/fonts/v1/FINNTypeStrippet-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    font-family: 'FINNType-Light', sans-serif;
+}
+
+.header {
+    border-bottom: 1px solid $border-color;
+    font-weight: 600;
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        margin: 0 auto;
+
+        &--right {
+            display: flex;
+            margin-left: 10vw;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: $licorice;
+        font-size: .8rem;
+        margin: 0 .5rem;
+        border-bottom: 2px solid transparent;
+        padding: .5rem;
+        height: 2rem;
+        white-space: nowrap;
+        font-family: 'FINNType-Light', sans-serif;
+        font-weight: 700;
+
+        &--text {
+            margin-left: .5rem;
+        }
+
+        & svg {
+            color: $header-icon-color;
+        }
+
+        &:hover, &:focus {
+            outline: none;
+            border-color: $primary-blue;
+        }
+    }
+}
+
+.find {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+    &__searcharea {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__categories {
+        width: 60vw;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__link {
+        display: grid;
+        place-items: center;
+        width: 100px;
+        height: 60px;
+        padding: 10px;
+        text-decoration: none;
+        color: $secondary-blue;
+        text-align: center;
+        gap: 5px;
+        margin: 15px 0;
+
+        &:hover, &:hover &--text {
+            color: $find-hover-link-color;
+        }
+
+        &:focus {
+            outline: 2px solid $secondary-blue;
+        }
+
+        &--text {
+            color: $licorice;
+            font-size: .85rem;
+        }
+
+        &--external {
+            width: 100px;
+            height: 60px;
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            color: $border-color;
+        }
+
+        &--map {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            color: $licorice;
+            font-family: Finntype-Medium, sans-serif;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.external:hover>svg {
+    opacity: .7; 
+}
+
+.suggestions {
+    width: 60vw;
+    margin: 30px auto;
+
+    &__title {
+        display: inline;
+        color: $licorice;
+    }
+    &__link {
+        text-decoration: none;
+        color: $primary-blue;
+        font-size: .85rem;
+        margin: 0 .3rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__cards {
+        margin-top: 25px;
+        display: flex;
+    }
+}
